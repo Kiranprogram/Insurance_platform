@@ -1,15 +1,6 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=GigShield%20AI&fontSize=60&fontColor=00F7FF&animation=fadeIn"/>
-
-</div>
-
-
-
-
-<div align="center">
-
 <br/>
 
 ```
