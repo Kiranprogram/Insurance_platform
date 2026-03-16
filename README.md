@@ -1,7 +1,8 @@
-<!-- Animated Header -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=32&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=GigShield+AI;Parametric+Income+Insurance+for+Gig+Workers;AI+Powered+Risk+Protection+Platform" />
 
-<br/>
+
+
+
+
 
 <div align="center">
 
@@ -16,18 +17,23 @@
   ╚═════╝ ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚═════╝     ╚═╝  ╚═╝╚═╝
 ```
 
-### *AI-Powered Parametric Income Insurance for India's Gig Economy*
+
 
 <br/>
 
-[![Guidewire DEVTrails 2026](https://img.shields.io/badge/Guidewire-DEVTrails%202026-FF6B35?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMiAxNWwtNS01IDEuNDEtMS40MUwxMCAxNC4xN2w3LjU5LTcuNTlMMTkgOGwtOSA5eiIvPjwvc3ZnPg==)](https://www.guidewire.com)
-[![Build Status](https://img.shields.io/badge/Build-Passing-00D26A?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com)
-[![Coverage](https://img.shields.io/badge/Coverage-87%25-00B4D8?style=for-the-badge)](https://github.com)
-[![License](https://img.shields.io/badge/License-MIT-A855F7?style=for-the-badge)](LICENSE)
-[![Phase](https://img.shields.io/badge/Phase-1%20%E2%80%94%20Ideation-F59E0B?style=for-the-badge)](https://github.com)
-[![Workers Protected](https://img.shields.io/badge/Target%20Workers-450M%2B-EF4444?style=for-the-badge)](https://github.com)
+<!-- Animated Header -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=32&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=GigShield+AI;Parametric+Income+Insurance+for+Gig+Workers;AI+Powered+Risk+Protection+Platform" />
 
 <br/>
+
+<div align="center">
+
+![AI](https://img.shields.io/badge/AI-Powered-00F7FF?style=for-the-badge&logo=openai&logoColor=white)
+![Insurance](https://img.shields.io/badge/Parametric-Insurance-FF00FF?style=for-the-badge)
+![Realtime](https://img.shields.io/badge/Realtime-Payouts-00FF9F?style=for-the-badge)
+![Gig Economy](https://img.shields.io/badge/Gig%20Workers-450M+-FF4D6D?style=for-the-badge)
+
+</div>
 
 > **"When it rains in Bengaluru, Raju should sleep peacefully —**  
 > **knowing that by morning, his earnings are protected."**
