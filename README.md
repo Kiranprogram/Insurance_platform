@@ -350,23 +350,62 @@ Target Precision: 97%+ | False Positive Rate: < 5%
 
 ## 🏗️ Technology Stack
 
+<div align="center">
+
 ### Backend & AI
 
-```
-Language      Python 3.11 / Node.js 20 (TypeScript)
-API Layer     FastAPI (AI inference) + NestJS (business microservices)
-AI / ML       scikit-learn · XGBoost · PyTorch · LangChain Agents
-LLM           Google Gemini 1.5 Pro (multilingual) / GPT-4o
-ASR           OpenAI Whisper (Indian languages)
-Streaming     Apache Kafka + Apache Flink (sub-second event processing)
-ML Ops        MLflow + Weights & Biases (experiment tracking)
-```
+<p>
+<img src="https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Node.js-20 TypeScript-339933?style=flat-square&logo=node.js&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/FastAPI-AI Inference-009688?style=flat-square&logo=fastapi&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/NestJS-Business Microservices-E0234E?style=flat-square&logo=nestjs&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/PyTorch-ML Training-EE4C2C?style=flat-square&logo=pytorch&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Google_Gemini-1.5 Pro-4285F4?style=flat-square&logo=google&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Whisper-ASR-412991?style=flat-square&logo=openai&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Apache_Kafka-Streaming-231F20?style=flat-square&logo=apache-kafka&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Apache_Flink-Stream Processing-E6526F?style=flat-square&logo=apache-flink&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/MLflow-ML Ops-0194E2?style=flat-square&logo=mlflow&logoColor=white&labelColor=0a0f1e" />
+</p>
 
 ### Frontend
 
-```
-Web (Admin)   Next.js 14 + TypeScript + Tailwind CSS
-```
+<p>
+<img src="https://img.shields.io/badge/Next.js-14-000000?style=flat-square&logo=next.js&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/TypeScript-Admin Dashboard-3178C6?style=flat-square&logo=typescript&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Tailwind CSS-Styling-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white&labelColor=0a0f1e" />
+</p>
+
+### Data & Infrastructure
+
+<p>
+<img src="https://img.shields.io/badge/PostgreSQL-15 Primary DB-4169E1?style=flat-square&logo=postgresql&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/MongoDB_Atlas-Document DB-47A248?style=flat-square&logo=mongodb&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Redis-Cache Layer-DC382D?style=flat-square&logo=redis&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/AWS-EKS + Lambda + S3-FF9900?style=flat-square&logo=amazonaws&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Apache_Spark-Analytics-E25A1C?style=flat-square&logo=apache-spark&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Grafana-Monitoring-F46800?style=flat-square&logo=grafana&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=flat-square&logo=docker&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=flat-square&logo=kubernetes&logoColor=white&labelColor=0a0f1e" />
+</p>
+
+### Integrations & Payments
+
+<p>
+<img src="https://img.shields.io/badge/IMD_API-Weather Primary-1565C0?style=flat-square&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/OpenWeatherMap-Forecast-EB6E4B?style=flat-square&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Razorpay-UPI Payouts-072654?style=flat-square&logo=razorpay&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Twilio-WhatsApp API-F22F46?style=flat-square&logo=twilio&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Firebase_FCM-Push Notifications-FFCA28?style=flat-square&logo=firebase&logoColor=black&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Google_Maps-Geo Services-4285F4?style=flat-square&logo=google-maps&logoColor=white&labelColor=0a0f1e" />
+<img src="https://img.shields.io/badge/Auth0-Identity-EB5424?style=flat-square&logo=auth0&logoColor=white&labelColor=0a0f1e" />
+</p>
+
+</div>
+
+<br/>
+
+---
+
 
 ### Data & Infrastructure
 
