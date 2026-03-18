@@ -131,19 +131,34 @@ Meet Raju Kumar
 
 > All plans are priced **per week**, matching how gig workers think about money.
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│   🔵 SHIELD BASIC        🟡 SHIELD PLUS         🔴 SHIELD MAX   │
-│   ━━━━━━━━━━━━━━━         ━━━━━━━━━━━━━━━        ━━━━━━━━━━━━   │
-│   ₹49 / week             ₹89 / week             ₹149 / week    │
-│                                                                 │
-│   Covers ₹800/wk         Covers ₹1,800/wk       Covers ₹3,500  │
-│   Heavy Rain only        Rain + AQI + Bandh      All triggers   │
-│                          (AI RECOMMENDED ★)      + Priority     │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
+
+## 🛡️ GigShield Plans
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <h3>🔵 SHIELD BASIC</h3>
+      <b>₹49 / week</b><br><br>
+      Covers ₹800/wk<br>
+      Heavy Rain only
+    </td>
+    <td align="center">
+      <h3>🟡 SHIELD PLUS</h3>
+      <b>₹89 / week</b><br><br>
+      Covers ₹1,800/wk<br>
+      Rain + AQI + Bandh<br>
+      ⭐ AI Recommended
+    </td>
+    <td align="center">
+      <h3>🔴 SHIELD MAX</h3>
+      <b>₹149 / week</b><br><br>
+      Covers ₹3,500/wk<br>
+      All triggers<br>
+      ⚡ Priority Support
+    </td>
+  </tr>
+</table>
+
 
 **Dynamic Pricing:** Every Monday, the AI re-prices your premium based on a 14-day disruption forecast for your specific zone.
 
