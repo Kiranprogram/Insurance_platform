@@ -209,25 +209,25 @@ STEP 6: RAJU WAKES UP TO MONEY
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                         GIGSHIELD AI ARCHITECTURE                           │
+│                          GIGSHIELD AI ARCHITECTURE                          │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
-│  ┌──────────────┐   ┌──────────────┐   ┌──────────────┐   ┌─────────────┐ │
-│  │  DATA LAYER  │   │   AI LAYER   │   │ BUSINESS CORE│   │   CLIENT    │ │
-│  ├──────────────┤   ├──────────────┤   ├──────────────┤   ├─────────────┤ │
-│  │ IMD Weather  │   │ Risk Profiler│   │ Policy Engine│   │ Web App     │ │
-│  │ AQI / CPCB   │──►│ Premium Price│──►│ Claims Proc. │──►│ WhatsApp    │ │
-│  │ Civic Alerts │   │ Fraud Detect │   │ Payout Calc. │   │ Bot         │ │
-│  │ Platform APIs│   │ NLP Onboard  │   │ Param.Trigger│   │ Admin Dash  │ │
-│  │ GPS Streams  │   │ Churn Predict│   │ Disruption   │   │             │ │
-│  └──────────────┘   └──────────────┘   │ Engine       │   └─────────────┘ │
-│         │                  │           └──────────────┘          │        │
-│         ▼                  ▼                   │                  ▼        │
-│  ┌──────────────┐   ┌──────────────┐          ▼          ┌─────────────┐  │
-│  │ Apache Kafka │   │  PostgreSQL  │   ┌──────────────┐  │  Razorpay   │  │
-│  │ AWS Kinesis  │   │  MongoDB     │   │ Redis Cache  │  │  UPI / IMPS │  │
-│  │ Socket.IO    │   │  Apache Spark│   └──────────────┘  │  Wallet     │  │
-│  └──────────────┘   └──────────────┘                     └─────────────┘  │
+│  ┌──────────────┐   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐  │
+│  │  DATA LAYER  │   │   AI LAYER   │   │ BUSINESS CORE│   │    CLIENT    │  │
+│  ├──────────────┤   ├──────────────┤   ├──────────────┤   ├──────────────┤  │
+│  │ IMD Weather  │   │ Risk Profiler│   │ Policy Engine│   │ Web App      │  │
+│  │ AQI / CPCB   │──►│ Premium Price│──►│ Claims Proc. │──►│ WhatsApp Bot │  │
+│  │ Civic Alerts │   │ Fraud Detect │   │ Payout Calc. │   │ Admin Dash   │  │
+│  │ Platform APIs│   │ NLP Onboard  │   │ Param.Trigger│   │              │  │
+│  │ GPS Streams  │   │ Churn Predict│   │ Disrupt. Eng.│   │              │  │
+│  └──────────────┘   └──────────────┘   └──────────────┘   └──────────────┘  │
+│         │                  │                  │                  │          │
+│         ▼                  ▼                  ▼                  ▼          │
+│  ┌──────────────┐   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐  │
+│  │ Apache Kafka │   │ PostgreSQL   │   │ Redis Cache  │   │ Razorpay     │  │
+│  │ AWS Kinesis  │   │ MongoDB      │   │              │   │ UPI / IMPS   │  │
+│  │ Socket.IO    │   │ Apache Spark │   │              │   │ Wallet       │  │
+│  └──────────────┘   └──────────────┘   └──────────────┘   └──────────────┘  │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
