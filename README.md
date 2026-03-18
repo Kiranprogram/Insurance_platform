@@ -331,37 +331,224 @@ Target Precision: 97%+ | False Positive Rate: < 5%
 
 ## 💰 Business Model
 
-### Weekly Premium Structure
+### Weighted Average Premium Calculation
 
 ```
-₹49 / week  →  ₹2,548/year   Shield Basic  (Heavy Rain only, covers ₹800/week)
-₹89 / week  →  ₹4,628/year   Shield Plus   (Rain + AQI + Bandh, covers ₹1,800/week)
-₹149 / week →  ₹7,748/year   Shield Max    (All triggers, covers ₹3,500/week)
+Plan Mix:  Basic (25%) · Plus (55%) · Max (20%)
+
+Avg Premium = (49 × 0.25) + (89 × 0.55) + (149 × 0.20)
+            =  12.25      +  48.95      +   29.80
+            = ₹91.00 / worker / week
 ```
+
+### Weekly Plan Structure
+
+| Plan | Weekly Premium | Annual Equiv. | Coverage | Triggers | Mix |
+|------|---------------|--------------|----------|----------|-----|
+| 🔵 Shield Basic | ₹49 | ₹2,548/yr | ₹800/wk | Rain only | 25% |
+| 🟡 Shield Plus ⭐ | ₹89 | ₹4,628/yr | ₹1,800/wk | Rain + AQI + Bandh | 55% |
+| 🔴 Shield Max | ₹149 | ₹7,748/yr | ₹3,500/wk | All 8 triggers | 20% |
+
+> **Why weekly pricing?** ₹89/week feels affordable. ₹4,628/year feels impossible. Same money — completely different psychology. Aligned to how gig workers earn and think.
+
+---
+
+### Unit Economics — Per Worker Per Week
+
+```
+REVENUE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Gross Premium (weighted avg)         ₹91.00   100.0%
+  Less: Reinsurance ceded (14%)       -₹12.74    14.0%
+                                      ────────
+  Net Earned Premium                   ₹78.26    86.0%
+  Add: B2B platform fee (₹8 × 30%)    +₹2.40     2.6%
+                                      ────────
+  TOTAL REVENUE / WORKER               ₹80.66    88.6%
+
+VARIABLE COSTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Claims payout (60% loss ratio)      -₹46.96    51.6%
+  Payout processing fee (Razorpay)     -₹2.75     3.0%
+  Tech & Cloud (8% of GP)              -₹7.28     8.0%
+  Ops & Compliance (6% of GP)          -₹5.46     6.0%
+  ML Infrastructure (3% of GP)         -₹2.73     3.0%
+                                      ────────
+  TOTAL VARIABLE COST                  ₹65.18    71.6%
+                                      ════════
+  CONTRIBUTION MARGIN / WORKER         ₹15.48    17.0%
+```
+
+> Each additional worker generates **₹15.48/week** toward covering fixed costs. This is the engine of the model.
+
+---
+
+### Payout Formula
+
+```
+Payout = Base Coverage × Severity Multiplier × Hours Affected
+         (capped at weekly plan limit)
+
+Real example — Raju, Shield Plus, 148mm rain (6 hrs):
+  = ₹1,800 × 0.85 (high severity) × 0.55 (6hr active window)
+  = ₹840 base + confidence adjustment
+  = ₹892 credited to raju@okaxis at 6:13 AM ✅
+```
+
+---
 
 ### Revenue Streams
 
-| Stream | Model | Est. Revenue / User / Month |
-|--------|-------|-----------------------------|
-| Premium Collection | B2C — worker pays weekly | ₹70–₹210 |
-| Platform Partnership | B2B — Swiggy/Zomato bundles us as worker benefit | ₹30–₹80 |
-| Risk Intelligence SaaS | B2B2B — zone analytics for platforms & municipalities | ₹15 |
-| Reinsurance Cession | Munich Re / Swiss Re cession commission | ₹10–₹20 |
-| Financial Upsell | EIS score → micro-loan leads via NBFC partners | ₹20–₹50 |
+| # | Stream | Who Pays | How | Margin |
+|---|--------|----------|-----|--------|
+| 1 | **Premium Collection** | Workers (B2C) | ₹49–149/week | 86% net retention |
+| 2 | **Platform Partnership** | Swiggy / Zomato (B2B) | ₹8/worker/week welfare bundle | ~100% |
+| 3 | **Reinsurance Commission** | Munich Re / Swiss Re | 22% of ceded premium returned | Pure income |
+| 4 | **Risk Intelligence SaaS** | Platforms + Municipalities (B2B2B) | ₹15/worker-equiv/month | 90%+ |
+| 5 | **Financial Upsell** | NBFC partners | ₹200–500/micro-loan referral | 100% |
 
-### Growth Projections
-
-| Metric | Year 1 | Year 2 | Year 3 |
-|--------|--------|--------|--------|
-| Active Insured Workers | 50,000 | 500,000 | 3,000,000 |
-| Avg Weekly Premium | ₹89 | ₹95 | ₹102 |
-| Gross Premium (₹ Cr) | 2.3 | 24.7 | 159 |
-| Loss Ratio Target | 60% | 58% | 55% |
-| EBITDA Margin | -35% | +8% | +28% |
-
-<br/>
+> Streams 4 & 5 launch Year 2 — not needed for profitability, pure upside.
 
 ---
+
+### Fixed Cost Structure
+
+| Component | Weekly | Annual |
+|-----------|--------|--------|
+| Founding team (4 people) | ₹60,000 | ₹31.2 Lakh |
+| AWS + APIs + Tooling | ₹15,000 | ₹7.8 Lakh |
+| **Total Fixed Weekly** | **₹75,000** | **₹39 Lakh** |
+
+### Customer Acquisition Cost (CAC)
+
+| Phase | Weeks | CAC/Worker | Channel |
+|-------|-------|-----------|---------|
+| Direct | 1–4 | ₹250 | Paid social, Swiggy banners |
+| B2B kickoff | 5–12 | ₹80 | Platform in-app referral |
+| Organic | 13+ | ₹30 | Word of mouth, worker networks |
+
+> CAC drops **88%** from Week 1 to Week 13 once B2B deals activate. This is the single biggest lever in the entire model.
+
+---
+
+### Breakeven Calculation
+
+```
+Step 1 — Workers needed to cover fixed costs:
+
+  BEP Workers = Fixed Cost ÷ Contribution Margin
+              = ₹75,000 ÷ ₹15.48
+              = 4,844 workers
+
+Step 2 — When do we hit 4,844 workers?
+
+  Week 15 → 5,500 workers (above threshold, but CAC still high)
+  Week 16 → 7,000 workers (1,500 new × ₹80 = ₹1,20,000 CAC spike → still -₹11,612)
+  Week 17 → 9,000 workers (margin ₹1,39,320 > fixed+CAC ₹1,35,000 → +₹20,016) ✅
+```
+
+**Week 16 vs Week 17 — The Exact Crossover**
+
+| Line Item | Week 16 | Week 17 | Δ |
+|-----------|---------|---------|---|
+| Active workers | 7,000 | 9,000 | +2,000 |
+| Gross premium | ₹6,37,000 | ₹8,19,000 | +₹1,82,000 |
+| Less: Reinsurance (14%) | -₹89,180 | -₹1,14,660 | |
+| Net earned premium | ₹5,47,820 | ₹7,04,340 | +₹1,56,520 |
+| Add: B2B revenue | ₹16,800 | ₹21,600 | +₹4,800 |
+| **Total Revenue** | **₹5,64,620** | **₹7,25,940** | **+₹1,61,320** |
+| Claims (60%) | -₹3,28,692 | -₹4,22,604 | |
+| Payout fees | -₹19,250 | -₹24,750 | |
+| Tech + Ops + ML (17%) | -₹1,08,290 | -₹1,39,230 | |
+| Fixed costs | -₹75,000 | -₹75,000 | unchanged |
+| CAC | -₹40,800 | -₹1,60,000 | +₹1,19,200 |
+| **Total Cost** | **₹5,72,032** | **₹7,05,924** | |
+| **NET PROFIT / LOSS** | **-₹11,612 ❌** | **+₹20,016 ✅** | **CROSSOVER** |
+
+---
+
+### 📈 Week-by-Week P&L — Key Milestones
+
+| Week | Workers | Weekly P&L (₹) | Cumulative P&L (₹) | Milestone |
+|:----:|--------:|---------------:|-------------------:|-----------|
+| 1 | 50 | -86,846 | -86,846 | 🚀 Launch |
+| 4 | 180 | -87,645 | -3,39,374 | |
+| 8 | 700 | -80,241 | -6,73,815 | |
+| 9 | 950 | -76,515 | -7,50,330 | 🤝 B2B pilot |
+| 12 | 2,400 | -85,838 | -9,78,168 | 📉 Peak deficit |
+| 16 | 7,000 | -11,612 | -11,09,880 | Almost there |
+| **17** | **9,000** | **+20,016** | **-10,89,864** | ✅ **OPER. BREAKEVEN** |
+| 20 | 18,000 | +98,712 | -8,69,130 | |
+| 24 | 40,000 | +3,34,360 | +72,230 | |
+| **25** | **48,000** | **+3,71,840** | **+4,44,070** | ✅ **CUMULATIVE BREAKEVEN** |
+| 30 | 1,18,000 | +12,12,112 | +45,36,182 | |
+| 36 | 2,75,000 | +31,93,100 | +1,81,21,282 | |
+| 52 | 12,48,000 | +1,67,29,032 | +16,72,22,650 | 🏁 Year 1 end |
+
+---
+
+### Year 1 Financial Summary
+
+```
+┌──────────────────────────────────────────────────────┐
+│             GIGSHIELD — YEAR 1 FINANCIALS            │
+├──────────────────────────┬───────────────────────────┤
+│ Week 52 active workers   │          12,48,000        │
+│ Total gross premium      │          ₹108.9 Cr        │
+│ Total revenue            │          ₹108.7 Cr        │
+│ Total claims paid out    │           ₹56.5 Cr        │
+│ Total CAC spend          │            ₹3.8 Cr        │
+│ Total fixed costs        │            ₹3.9 Cr        │
+│ Total operating cost     │           ₹92.0 Cr        │
+├──────────────────────────┼───────────────────────────┤
+│ NET PROFIT — YEAR 1      │           ₹16.7 Cr        │
+│ Net margin               │             15.4%         │
+├──────────────────────────┼───────────────────────────┤
+│ Operational breakeven    │           Week 17         │
+│ Cumulative breakeven     │           Week 25         │
+│ Peak deficit             │        ₹11,09,880         │
+│ Min. seed required       │    ₹1.5 Cr (30% buffer)   │
+│ ROI on seed by Week 52   │           1,113%          │
+└──────────────────────────┴───────────────────────────┘
+```
+
+### 3-Year Growth Trajectory
+
+| Metric | Year 1 | Year 2 | Year 3 |
+|--------|-------:|-------:|-------:|
+| Active workers | 12,48,000 | 50,00,000 | 3,00,00,000 |
+| Avg weekly premium | ₹91 | ₹95 | ₹102 |
+| Gross premium (₹ Cr) | 108.9 | 247 | 1,590 |
+| Loss ratio | 60% | 58% | 55% |
+| B2B platforms live | 2 | 8 | 25 |
+| Net margin | 15.4% | ~22% | ~28% |
+| EBITDA (₹ Cr) | 16.7 | 54.3 | 445 |
+
+### Sensitivity — What Breaks the Model?
+
+| Variable | Base | Bear | Bull | BE Week Shift |
+|----------|------|------|------|---------------|
+| Loss ratio | 60% | 75% | 50% | +4 weeks |
+| Avg premium | ₹91 | ₹70 | ₹105 | +4 weeks |
+| CAC post-B2B | ₹80 | ₹150 | ₹40 | +5 weeks |
+| Worker growth | Base | 50% slower | 25% faster | +6 weeks |
+| Fixed costs | ₹75k/wk | ₹1L/wk | ₹60k/wk | +2 weeks |
+
+> **Worst case** (all bear simultaneously): breakeven shifts to Week 26–28, capital need rises to ~₹2 Cr. Still fundable with a standard seed round. The model survives because contribution margin is positive from Day 1 — it is purely a volume game.
+
+---
+
+### Why This Model Wins
+
+| Traditional Insurance | GigShield AI |
+|-----------------------|-------------|
+| Annual ₹4,628 premium | Weekly ₹89 (same money, affordable framing) |
+| 30–90 day claims | Sub-15 min automated payout |
+| CAC ₹500–2,000 | CAC ₹30–80 via platform distribution |
+| City-level risk | 500m hyper-local zone detection |
+| Generic population | Built exclusively for gig workers |
+| Static annual pricing | Dynamic weekly repricing every Monday |
+
 
 ## 🏗️ Technology Stack
 
