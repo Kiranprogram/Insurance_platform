@@ -9,22 +9,7 @@
 
 
 
-<div align="center">
 
-<br/>
-
-```
-                        ██████╗ ██╗ ██████╗ ███████╗██╗  ██╗██╗███████╗██╗     ██████╗      █████╗ ██╗
-                       ██╔════╝ ██║██╔════╝ ██╔════╝██║  ██║██║██╔════╝██║     ██╔══██╗    ██╔══██╗██║
-                       ██║  ███╗██║██║  ███╗███████╗███████║██║█████╗  ██║     ██║  ██║    ███████║██║
-                       ██║   ██║██║██║   ██║╚════██║██╔══██║██║██╔══╝  ██║     ██║  ██║    ██╔══██║██║
-                       ╚██████╔╝██║╚██████╔╝███████║██║  ██║██║███████╗███████╗██████╔╝    ██║  ██║██║
-                        ╚═════╝ ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚═════╝     ╚═╝  ╚═╝╚═╝
-```
-
-
-
-<br/>
 
 <!-- Animated Header -->
 <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=32&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=GigShield+AI;Parametric+Income+Insurance+for+Gig+Workers;AI+Powered+Risk+Protection+Platform" />
