@@ -1,0 +1,152 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1200" height="760" fill="#0B0F19"/>
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle"
+        fill="#E5E7EB"
+        font-size="28"
+        font-family="Inter, Segoe UI, sans-serif"
+        font-weight="600">
+    GigShield AI — Future Roadmap
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="85" text-anchor="middle"
+        fill="#9CA3AF"
+        font-size="14"
+        font-family="Inter, sans-serif">
+    Self-evolving autonomous insurance infrastructure
+  </text>
+
+  <!-- Timeline -->
+  <line x1="100" y1="380" x2="1100" y2="380"
+        stroke="#2A2F3A" stroke-width="2" stroke-dasharray="6,6">
+    <animate attributeName="stroke-dashoffset"
+             values="0;12"
+             dur="2s"
+             repeatCount="indefinite"/>
+  </line>
+
+  <!-- PHASE 1 -->
+  <circle cx="200" cy="380" r="7" fill="#4F8CFF">
+    <animate attributeName="r" values="7;9;7" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <rect x="120" y="400" width="160" height="140" rx="12"
+        fill="#111827" stroke="#4F8CFF"/>
+
+  <text x="200" y="425" text-anchor="middle"
+        fill="#4F8CFF" font-size="13" font-weight="600">
+    Phase 1 — Intelligence
+  </text>
+
+  <text x="200" y="445" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Multi-modal signals
+  </text>
+  <text x="200" y="460" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Behavior-based risk
+  </text>
+  <text x="200" y="475" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Real-time earnings
+  </text>
+  <text x="200" y="490" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Explainable payouts
+  </text>
+
+  <!-- PHASE 2 -->
+  <circle cx="450" cy="380" r="7" fill="#7C3AED">
+    <animate attributeName="r" values="7;9;7" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+  </circle>
+
+  <rect x="370" y="220" width="160" height="140" rx="12"
+        fill="#111827" stroke="#7C3AED"/>
+
+  <text x="450" y="245" text-anchor="middle"
+        fill="#7C3AED" font-size="13" font-weight="600">
+    Phase 2 — Autonomous AI
+  </text>
+
+  <text x="450" y="265" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Self-learning pricing
+  </text>
+  <text x="450" y="280" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Predictive alerts
+  </text>
+  <text x="450" y="295" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Reinsurance AI layer
+  </text>
+  <text x="450" y="310" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Fraud evolution
+  </text>
+
+  <!-- PHASE 3 -->
+  <circle cx="700" cy="380" r="7" fill="#22C55E">
+    <animate attributeName="r" values="7;9;7" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <rect x="620" y="400" width="160" height="140" rx="12"
+        fill="#111827" stroke="#22C55E"/>
+
+  <text x="700" y="425" text-anchor="middle"
+        fill="#22C55E" font-size="13" font-weight="600">
+    Phase 3 — Expansion
+  </text>
+
+  <text x="700" y="445" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    B2B API platform
+  </text>
+  <text x="700" y="460" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Embedded insurance
+  </text>
+  <text x="700" y="475" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Financial services
+  </text>
+  <text x="700" y="490" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Global scale
+  </text>
+
+  <!-- PHASE 4 -->
+  <circle cx="950" cy="380" r="7" fill="#F59E0B">
+    <animate attributeName="r" values="7;9;7" dur="2s" begin="0.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <rect x="870" y="220" width="160" height="140" rx="12"
+        fill="#111827" stroke="#F59E0B"/>
+
+  <text x="950" y="245" text-anchor="middle"
+        fill="#F59E0B" font-size="13" font-weight="600">
+    Phase 4 — Future
+  </text>
+
+  <text x="950" y="265" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    IoT sensors
+  </text>
+  <text x="950" y="280" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Blockchain ledger
+  </text>
+  <text x="950" y="295" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    Insurance DAO
+  </text>
+  <text x="950" y="310" text-anchor="middle"
+        fill="#9CA3AF" font-size="11">
+    AI worker copilot
+  </text>
+
+</svg>
