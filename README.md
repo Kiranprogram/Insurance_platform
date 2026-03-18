@@ -756,6 +756,27 @@ gigshield-ai/
 
 ---
 
+## 🔮 Future Roadmap & System Upgrades
+
+> 🚧 **GigShield AI is not just a product — it is an evolving autonomous financial safety net.**
+
+<br/>
+
+> GigShield is designed as a **self-learning, agent-driven insurance infrastructure**.  
+> The roadmap below outlines how the system evolves across **intelligence, automation, and global scale**.
+
+<br/>
+
+<div align="center">
+  <img src="assets/roadmap.svg" alt="GigShield future vision" width="100%" />
+  <br />
+
+</div>
+
+<br/>
+
+---
+
 ## 👥 Team GigShield AI
 
 > Built for Guidewire DEVTrails 2026 University Hackathon · March 2026
