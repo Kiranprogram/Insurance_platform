@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/gemini-svg.svg" alt="MindMesh Presents" width="100%" />
+  <img src="assets/svg.svg" alt="MindMesh Presents" width="100%" />
   <br />
 
 </div>
