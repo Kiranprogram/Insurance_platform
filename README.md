@@ -7,10 +7,6 @@
 
 
 
-
-
-
-<!-- Animated Header -->
 <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=32&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=Parametric+Income+Insurance+for+Gig+Workers;AI+Powered+Risk+Protection+Platform" />
 
 <br/>
@@ -40,10 +36,6 @@
 <br/>
 
 <br/>
-
-
-
-
 
 
 > **When it rains in Bengaluru, Raju should sleep peacefully**  
