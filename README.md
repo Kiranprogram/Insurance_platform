@@ -60,7 +60,8 @@
 | 💸 Average loss per disruption event | **₹3,500 – ₹7,000** |
 | 📅 Disruption days per worker per year | **18 – 26 days** |
 | 🏚️ Annual unprotected income loss | **~₹1.2 Lakh Crore** |
-| 📈 Gig economy's share of Indian GDP | **4.5% (growing 15% YoY)** |
+| 📈 Gig economy's share of Indian GDP | **4.5% (growing 15% YoY)** | 
+
 
 </div>
 
