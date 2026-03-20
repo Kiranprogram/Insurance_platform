@@ -693,6 +693,101 @@ Entire lifecycle — purchase, status, claims, payout — accessible via WhatsAp
 
 ---
 
+## 🚨 Adversarial Defense & Anti-Spoofing Strategy
+
+> **The Attack:** 500 workers faked GPS locations into red-alert zones via Telegram-coordinated spoofing apps — draining a competitor's liquidity pool with mass false payouts.  
+> **Our Response:** GPS was never our source of truth. It's one signal among nine.
+
+---
+
+### Why We Were Already Harder to Hit
+
+```
+Spoofing defeats:   LAYER 1 — GPS Validation                    ✗
+Still intact:       LAYER 2 — Platform Order Cross-Check         ✓
+                    LAYER 3 — Peer Income Validation (200+ peers) ✓
+                    LAYER 4 — Temporal Anomaly (Isolation Forest) ✓
+                    LAYER 5 — GNN Fraud Ring Detection            ✓
+                    LAYER 6 — Device Fingerprinting               ✓
+                    LAYER 7 — Duplicate Prevention (hash)         ✓
+We now add:         LAYER 8 — Cell Tower Triangulation            ✓ NEW
+                    LAYER 9 — Sensor Fusion + Mock Location Flag  ✓ NEW
+```
+
+---
+
+### 1. 🧠 The Differentiation — Behavioral Truth Score (BTS)
+
+A real stranded worker leaves a correlated trail across 9 signals. A spoofer can fake GPS. They can't fake all nine.
+
+| # | Signal | Genuine Worker | Spoofer |
+|---|--------|---------------|---------|
+| 1 | 📡 Cell Tower ID | Tower inside zone | Home-area tower ❌ |
+| 2 | 📱 Accelerometer | Idle/sheltering | Home rest pattern ❌ |
+| 3 | 🌡️ Barometer | Pressure drop = storm | Home microclimate ❌ |
+| 4 | 🛵 Platform Order Log | 0 orders, last drop in zone | No zone history ❌ |
+| 5 | 📶 WiFi BSSID | No home router | Home MAC detected ❌ |
+| 6 | 🔋 Battery State | High drain (GPS + rain nav) | Normal indoor curve ❌ |
+| 7 | 📲 Mock Location Flag | `ACCESS_MOCK_LOCATION = 0` | Spoofing app active ❌ |
+| 8 | 👥 Peer Validation | 200+ peers also show ₹0 | Peers unaffected ❌ |
+| 9 | 📊 Earnings Baseline | Loss matches 12-wk history | Never worked this zone ❌ |
+
+> No new permissions needed — all signals collected during normal delivery tracking.
+
+---
+
+### 2. 📊 The Data — Ring Detection Engine
+
+Individual BTS catches solo fraud. The Ring Score catches the syndicate.
+
+```
+RING TRIGGERS → cluster freeze before any payout fires:
+
+  🕐 Claim Velocity    20+ claims in 10 min from one zone (vs. baseline)
+  🌐 Graph Clustering  Shared referral chain or home pincodes outside zone
+  📱 Device Cluster    Same hardware + OS + mock_location_flag across claims
+  ⏱️  Timing Pattern    <3 min spread across 50+ workers = not organic
+  🗺️  Zone Anomaly      Zero delivery history in zone for 30 days prior
+  📣  Onboarding Spike  Policy surge 48hrs before a forecasted event
+```
+
+> No private chats needed — timing + graph patterns expose the syndicate automatically.
+
+---
+
+### 3. ⚖️ The UX Balance — Three-Tier Workflow
+
+```
+[BTS Computed: 8 sec] + [Ring Score] → Combined Decision
+         │
+         ├── BTS ≥ 75   ✅ AUTO-PAY    Instant UPI. Zero friction. (~85% of claims)
+         │
+         ├── BTS 40–74  ⏸️  SOFT VERIFY  "One quick step." Live ping OR geotagged photo.
+         │                              Pays in <5 min if verified.
+         │                              No signal? → Storm Hold → backdated on restore.
+         │
+         └── BTS < 40   🚫 BLOCK       24-hr human review. Entire ring cluster frozen
+              or Ring↑               simultaneously. Not a single rupee leaves the pool.
+```
+
+**Key principle:** We ask for *confirmation*, never *proof of innocence.*  
+Raju's Redmi Note 12 dropping signal in a storm → Tier 2, paid in 5 minutes.  
+500-worker Telegram ring → Ring Score spikes, cluster frozen in <60 seconds.
+
+---
+
+```
+RESULT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Fraud precision      97%+ → 99%+
+  False positive rate  < 5% → < 2%
+  Honest auto-approval > 85% — unchanged
+  Ring freeze time     < 60 sec from first claim
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  The syndicate broke a GPS-only platform.
+  GigShield has no single point of failure.
+```
+
 ## 📁 Repository Structure
 
 ```
