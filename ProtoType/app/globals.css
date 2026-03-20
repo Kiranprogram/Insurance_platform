@@ -1,0 +1,194 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-background: #090b14;
+  --color-foreground: #f7f7fb;
+  --color-card: #141727;
+  --color-card-foreground: #f7f7fb;
+  --color-primary: #ff5722;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #00e5ff;
+  --color-secondary-foreground: #08111a;
+  --color-accent: #00c853;
+  --color-accent-foreground: #08110b;
+  --color-muted: #1a1f33;
+  --color-muted-foreground: #9aa3c7;
+  --color-destructive: #ff5252;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #252a42;
+  --color-input: #252a42;
+  --color-ring: #ff5722;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at top, rgba(255, 87, 34, 0.14), transparent 22%),
+      radial-gradient(circle at 85% 15%, rgba(0, 229, 255, 0.12), transparent 18%),
+      linear-gradient(180deg, #090b14 0%, #0e1020 45%, #090b14 100%);
+    color: var(--color-foreground);
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: rgba(255, 87, 34, 0.35);
+    color: white;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes city-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.3;
+  }
+}
+
+@keyframes credit-rise {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 16px);
+  }
+  18% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -22px);
+  }
+}
+
+@keyframes rain-fall {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120px);
+    opacity: 0;
+  }
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-80px) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(520deg);
+    opacity: 0;
+  }
+}
+
+@keyframes scan-line {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(115%);
+  }
+}
+
+@keyframes shimmer-line {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes floating-feed {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(135deg, #ff5722 0%, #ffd166 35%, #00e5ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-shell {
+    @apply relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#111322] shadow-[0_24px_80px_rgba(0,0,0,0.35)];
+  }
+
+  .subtle-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .marquee-track {
+    animation: marquee 25s linear infinite;
+  }
+
+  .animate-city-pulse {
+    animation: city-pulse 1.5s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+  .animate-credit-rise {
+    animation: credit-rise 1.5s ease-out forwards;
+  }
+
+  .animate-rain-fall {
+    animation: rain-fall 1.8s linear infinite;
+  }
+
+  .animate-scan-line {
+    animation: scan-line 2s linear infinite;
+  }
+
+  .animate-shimmer-line {
+    animation: shimmer-line 1.8s ease-in-out infinite;
+  }
+
+  .animate-floating-feed {
+    animation: floating-feed 4s ease-in-out infinite;
+  }
+
+  .glass-panel {
+    @apply border border-white/10 bg-white/5 backdrop-blur-xl;
+  }
+}
