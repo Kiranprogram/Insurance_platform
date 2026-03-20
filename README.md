@@ -1,9 +1,8 @@
-<div align="center">
+<img width="1720" height="400" alt="image" src="https://github.com/user-attachments/assets/878241f4-5d07-415b-be7b-d8e60b10a080" /><div align="center">
   <img src="assets/svg.svg" alt="MindMesh Presents" width="100%" />
   <br />
 
 </div>
-
 
 
 
@@ -25,7 +24,25 @@
 
 </div>
 
-> **"When it rains in Bengaluru, Raju should sleep peacefully —**  
+
+
+
+<br/>
+
+<div align="center">
+  <a href="https://v0-gig-shield-ai-website-c9k1.vercel.app/" target="_blank">
+    <img src="assets/prototype-btn.svg" alt="Launch GigShield AI Prototype" width="600" />
+  </a>
+</div>
+
+<br/>
+
+
+
+
+
+
+> **"When it rains in Bengaluru, Raju should sleep peacefully **  
 > **knowing that by morning, his earnings are protected."**
 
 <br/>
