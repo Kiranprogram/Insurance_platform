@@ -1,0 +1,34 @@
+Visual Continuity Rules (Apply to All Scenes)
+
+Main Character
+
+Male Indian delivery rider, age 25–30
+Medium brown skin tone
+Light stubble beard
+Wearing yellow delivery jacket, black helmet, dark jeans
+Riding black motorbike with delivery box
+
+City Setting
+
+Dense urban India (Bangalore / Delhi style streets)
+Busy roads, scooters, auto rickshaws, street vendors
+Realistic documentary look
+Cinematography Style
+Cinematic commercial realism
+4K HDR look
+Shallow depth of field
+Natural lighting
+Smooth camera movement (gimbal / slow tracking)
+
+Color Tone
+
+Scenes 1–3: muted / realistic
+Scenes 4–6: modern fintech blue tones
+Scenes 7–8: brighter hopeful color grade
+
+UI Style
+
+Minimal fintech interface
+Clean dashboards
+Blue + white color palette
+Glassmorphism / modern SaaS UI

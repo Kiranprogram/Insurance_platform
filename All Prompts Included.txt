@@ -1,0 +1,149 @@
+MASTER VISUAL CONTINUITY (Included in every prompt)
+
+Animation Style
+
+Clean premium fintech system architecture animation, similar to Stripe / AWS / Apple product videos, minimal dark interface background, floating 3D architecture modules, glowing glass panels, animated city map overlays, pulsing AI nodes, flowing data pipelines connecting modules, smooth cinematic camera movement, high-end startup product animation style.
+
+Environment
+
+Stylized digital city map of India, glowing grid streets, small delivery rider icons moving through streets like data points, futuristic tech UI panels floating above the city.
+
+Motion Language
+
+Flowing data particles, glowing pipeline connections, pulsing AI nodes, animated graphs, smooth camera pans through architecture layers.
+
+Consistent Agent Color System
+
+🔵 Onboarding Agent — Blue
+
+🟢 Disruption Sentinel — Green
+
+🟠 Fraud Investigator — Orange
+
+🟡 Payout Orchestrator — Gold
+
+🟣 Analytics & Pricing Agent — Purple
+
+UI Style
+
+Glassmorphism dashboards, floating graphs, animated system nodes, modern fintech interface design, premium product animation aesthetic.
+
+SCENE 1 — Hook: The Gig Economy
+
+Duration: 6 seconds
+
+Voiceover
+
+“Millions of gig workers rely on daily earnings. But when disruptions hit, income disappears instantly.”
+
+SCENE 1 VIDEO PROMPT (Veo3)
+
+Clean premium fintech system animation with floating glass UI panels and glowing data pipelines, stylized digital city map of India with grid streets and delivery rider icons moving through the city like data points, animated rain clouds forming above the city map, pollution alert icons flashing across buildings, traffic slowing as rider icons fade out, minimal infographic animation style, smooth cinematic zoom across the city map, high-end Stripe style product animation aesthetic, global color coding present in UI legend showing agents: blue onboarding, green disruption sentinel, orange fraud investigator, gold payout orchestrator, purple analytics agent.
+
+SCENE 2 — Introducing GigShield AI
+
+Duration: 6 seconds
+
+Voiceover
+
+“GigShield AI protects gig worker income using a network of autonomous AI agents.”
+
+SCENE 2 VIDEO PROMPT (Veo3)
+
+Premium fintech system architecture animation forming above the digital city map of India, floating modular architecture blocks appearing one by one connected by glowing data pipelines, five labeled AI agent nodes activating with consistent color coding: blue onboarding agent, green disruption sentinel, orange fraud investigator, gold payout orchestrator, purple analytics and pricing agent, glass interface panels floating around the system, smooth cinematic camera orbit around architecture, flowing data particles between nodes, Stripe style deep tech product animation.
+
+SCENE 3 — Agent A: Onboarding Agent
+
+Duration: 7 seconds
+
+Voiceover
+
+“First, the Onboarding Agent verifies identity, analyzes earnings history, and recommends the right protection plan.”
+
+SCENE 3 VIDEO PROMPT (Veo3)
+
+Clean fintech system animation with digital city map background and floating architecture modules, blue onboarding agent module glowing prominently, worker smartphone interface showing login via delivery platform OAuth, data streams flowing from platform APIs into the onboarding AI engine, earnings history graphs appearing on floating glass dashboards, risk score meter rising from 0 to 100, policy activation confirmation appearing, blue data particles flowing through onboarding pipelines, consistent architecture style with other agent nodes visible in background: green sentinel, orange fraud investigator, gold payout orchestrator, purple analytics.
+
+SCENE 4 — Agent B: Disruption Sentinel
+
+Duration: 7 seconds
+
+Voiceover
+
+“The Disruption Sentinel continuously monitors weather, pollution, and civic alerts across the city.”
+
+SCENE 4 VIDEO PROMPT (Veo3)
+
+Premium fintech architecture animation with digital city map of India below, green disruption sentinel module activating, multiple real-time data feeds appearing including weather radar, AQI sensor network, traffic alerts, civic warning signals, animated data pipelines streaming into the sentinel AI node, green pulsing monitoring nodes appearing across the city map highlighting affected zones, smooth camera movement across the monitoring network, consistent system architecture with blue onboarding, orange fraud investigator, gold payout orchestrator, and purple analytics modules visible in connected pipeline.
+
+SCENE 5 — Event Detection
+
+Duration: 6 seconds
+
+Voiceover
+
+“When conditions cross predefined thresholds, the system automatically declares a disruption event.”
+
+SCENE 5 VIDEO PROMPT (Veo3)
+
+Fintech system architecture visualization with city map overlay, rainfall intensity graph rising and crossing a glowing threshold line, AI confidence meter increasing to 97 percent, green disruption sentinel node triggering an event, city zones lighting up red to indicate disruption areas, automated event declaration notification appearing in the central system dashboard, glowing data pipelines activating downstream modules including orange fraud investigator and gold payout orchestrator, smooth cinematic tech animation style.
+
+SCENE 6 — Agent C: Fraud Investigator
+
+Duration: 7 seconds
+
+Voiceover
+
+“The Fraud Investigator verifies worker activity using GPS data, platform orders, and peer comparisons.”
+
+SCENE 6 VIDEO PROMPT (Veo3)
+
+Clean fintech architecture animation with floating glass panels, orange fraud investigator module activating, animated GPS path tracing delivery rider movement through city streets, platform order data streaming from APIs, peer comparison charts appearing beside worker metrics, graph neural network visualization connecting worker nodes across the map, fraud risk meter dropping into safe zone, orange verification signals confirming eligibility, connected pipelines visible linking to blue onboarding, green sentinel, gold payout orchestrator, and purple analytics modules.
+
+SCENE 7 — Agent D: Payout Orchestrator
+
+Duration: 7 seconds
+
+Voiceover
+
+“Once verified, the Payout Orchestrator instantly calculates compensation and sends payment via UPI.”
+
+SCENE 7 VIDEO PROMPT (Veo3)
+
+Premium fintech payment system animation with floating architecture blocks and glowing pipelines, gold payout orchestrator module lighting up, compensation formula animation calculating payout amount on a glass dashboard, payment pipeline flowing through API gateway toward worker smartphone, animated UPI transfer traveling along gold data pipeline, phone notification appearing “GigShield payout received”, gold particle effects flowing across the payment network, other system modules visible in background including blue onboarding, green sentinel, orange fraud investigator, purple analytics.
+
+SCENE 8 — Agent E: Analytics & Pricing
+
+Duration: 7 seconds
+
+Voiceover
+
+“The Analytics Agent continuously retrains models to improve pricing, risk prediction, and coverage.”
+
+SCENE 8 VIDEO PROMPT (Veo3)
+
+Futuristic fintech analytics dashboard animation with purple analytics and pricing module activating, machine learning pipeline visualized with flowing purple data streams, dynamic city risk heatmap updating across districts, neural network model retraining animation with glowing nodes, premium pricing curve adjusting automatically, purple data particles circulating through system pipelines connected to blue onboarding, green sentinel, orange fraud investigator, and gold payout orchestrator modules.
+
+SCENE 9 — Full System Pipeline
+
+Duration: 7 seconds
+
+Voiceover
+
+“Together, these AI agents create the world’s first autonomous income protection system for gig workers.”
+
+SCENE 9 VIDEO PROMPT (Veo3)
+
+Wide cinematic shot of the complete GigShield AI architecture, floating above the glowing city map of India, five AI agent modules connected through flowing pipelines: blue onboarding agent, green disruption sentinel, orange fraud investigator, gold payout orchestrator, purple analytics agent, delivery rider icons across the city gaining glowing shield icons, pulsing system data flow connecting all modules, high-end deep tech product animation similar to Apple or Stripe platform videos.
+
+SCENE 10 — Closing
+
+Duration: 5 seconds
+
+Voiceover
+
+“GigShield AI — income protection built for the gig economy.”
+
+SCENE 10 VIDEO PROMPT (Veo3)
+
+Clean cinematic fintech brand reveal with dark interface background, GigShield logo emerging above glowing digital city skyline, shield icon expanding outward across the city protecting delivery rider icons, subtle particle glow, floating architecture pipelines fading behind the logo while agent color accents remain visible: blue onboarding, green sentinel, orange fraud investigator, gold payout orchestrator, purple analytics, premium startup product animation style.

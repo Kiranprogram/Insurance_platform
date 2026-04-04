@@ -1,0 +1,130 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-background: #06080f;
+  --color-foreground: #f7f7fb;
+  --color-card: #0d101e;
+  --color-card-foreground: #f7f7fb;
+  --color-primary: #ff5722;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #00e5ff;
+  --color-secondary-foreground: #08111a;
+  --color-accent: #00c853;
+  --color-accent-foreground: #08110b;
+  --color-muted: #13172b;
+  --color-muted-foreground: #8a96c4;
+  --color-destructive: #ff5252;
+  --color-destructive-foreground: #ffffff;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-input: rgba(255, 255, 255, 0.05);
+  --color-ring: #ff5722;
+  --radius: 1.25rem;
+  
+  /* Custom Bento Tokens */
+  --bento-gap: 1.5rem;
+  --bento-bg: rgba(13, 16, 30, 0.4);
+  --bento-border: rgba(255, 255, 255, 0.1);
+  --bento-glow: rgba(255, 87, 34, 0.15);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: rgba(255, 87, 34, 0.35);
+    color: white;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(-10%); }
+  100% { transform: translateY(115%); }
+}
+
+@utility glass-premium {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(40px);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 50px rgba(255, 87, 34, 0.1);
+  }
+}
+
+@utility section-shell {
+  @apply glass-premium rounded-[2rem];
+}
+
+@utility bento-grid {
+  display: grid;
+  gap: var(--bento-gap);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+@utility bento-cell {
+  @apply glass-premium flex flex-col justify-between rounded-[var(--radius)] p-6 lg:p-8;
+}
+
+@utility gradient-text {
+  background: linear-gradient(to right, #ff5722, #ffd166, #00e5ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+@utility digital-meter {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  @apply text-glow tracking-tighter;
+  filter: drop-shadow(0 0 8px rgba(255, 87, 34, 0.4));
+}
+
+@utility text-glow {
+  text-shadow: 0 0 20px rgba(255, 87, 34, 0.3);
+}
+
+@utility animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@utility animate-scan-line {
+  animation: scan-line 2s linear infinite;
+}
+
+@utility subtle-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
